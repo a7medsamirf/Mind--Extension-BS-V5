@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+
+    <title>add meeting  </title>
+
+
+</head>
+
+<body class="page min-vh-100 d-flex flex-column">
+    <div class="header border-bottom p-3">
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-center">
+               <div class="text-muted">
+                      <img class="brand w-100 h-100" src="assets/img/MindLogo.svg" alt="Mind" >
+                </div>
+                <div class="text-muted">
+                 <a href="index.html" type="button" class="btn close fs-8" aria-label="Close">
+                    <i class="icon icon-close fs-4"></i>
+                 </a>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <div class="header border-bottom p-3">
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-center">
+                 <div class="text-muted d-flex align-items-center gap-2">
+                <a class="go-Back" href="javascript:void(0);" onclick="window.history.go(-1); return false;"> 
+                 <i class="icon icon-Arrow fs-4"></i>
+                </a>
+                    <span class="panel-title">add meeting </span>
+                </div>
+                <div class="text-muted">
+                    <button class="btn btn-primary px-4" type="button">
+                        save
+                    </button>
+                </div>
+
+            </div>
+        </div>
+  
+    </div>
+
+<main class="flex-grow-1">
+  <div class="container">
+    <form class="pt-3 pb-4">
+      <div class="mb-3">
+        <input type="text" class="form-control no-outline border-0 border-bottom rounded-0" placeholder="Enter The Meeting Title" aria-label="Meeting Title">
+      </div>
+
+            <div class="mb-4">
+            <div class="d-flex align-items-start gap-3">
+
+                <!-- Shared Icon -->
+                <div class="pt-2 text-muted">
+                <i class="icon icon-time fs-4"></i>
+                </div>
+
+                <!-- Inputs -->
+                <div class="flex-grow-1">
+                <div class="row g-3">
+
+                    <!-- Row 1 -->
+                    <div class="col-6">
+                    <div class="position-relative">
+                            <i class="icon icon-calendar position-absolute top-50 end-0 translate-middle-y me-3 text-muted"></i>
+                            <input type="date" class="form-control form-control-solid pe-5">
+                       </div>
+                    </div>
+                    <div class="col-6">
+                    <div class="position-relative">
+                            <i class="icon icon-time position-absolute top-50 end-0 translate-middle-y me-3 text-muted"></i>
+                            <input type="time" class="form-control form-control-solid pe-5">
+                            </div>
+                    </div>
+
+                    <!-- Row 2 -->
+                    <div class="col-6">
+                     <div class="position-relative">
+                            <i class="icon icon-calendar position-absolute top-50 end-0 translate-middle-y me-3 text-muted"></i>
+                            <input type="date" class="form-control form-control-solid pe-5">
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="position-relative">
+                            <i class="icon icon-time position-absolute top-50 end-0 translate-middle-y me-3 text-muted"></i>
+                            <input type="time" class="form-control form-control-solid pe-5">
+                            </div>
+                    
+                    </div>
+
+                </div>
+                </div>
+
+            </div>
+            </div>
+              <div class="mb-4">
+            <div class="d-flex align-items-start gap-3">
+                <!-- Shared Icon -->
+                <div class="pt-2 text-muted">
+                <i class="icon icon-time fs-4"></i>
+                </div>
+
+                <!-- Inputs -->
+                <div class="flex-grow-1">
+                <div class="row">
+                    <!-- Row 1 -->
+                    <div class="col-12">
+                     <div class="filter-tabs d-flex gap-1 mb-3">
+                        <input type="radio" class="btn-check" name="meetingType" id="type-inperson" checked>
+                        <label class="btn btn-outline-primary" for="type-inperson"><i class="icon icon-check me-2"></i>In-person</label>
+                        <input type="radio" class="btn-check" name="meetingType" id="type-remote">
+                        <label class="btn btn-outline-primary" for="type-remote"><i class="icon icon-check me-2"></i>Remote</label>
+                        <input type="radio" class="btn-check" name="meetingType" id="type-hybrid">
+                        <label class="btn btn-outline-primary" for="type-hybrid"><i class="icon icon-check me-2"></i>Hybrid</label>
+                    </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="input-group gap-2">
+                        <select class="form-select form-control-solid" aria-label="Venue">
+                            <option selected disabled>Choose the hall/venue</option>
+                            <option>Hall A</option>
+                            <option>Hall B</option>
+                            <option>Remote</option>
+                        </select>
+                        <button type="button" class="btn btn-outline-primary btn-plus">
+                            <i class="icon icon-plus"></i>
+                        </button>
+                        </div>
+                    </div>
+
+
+                </div>
+                </div>
+
+            </div>
+            </div>
+
+            <div class="mb-4">
+                        <div class="d-flex align-items-start gap-3">
+                            <!-- Shared Icon -->
+                            <div class="pt-2 text-muted">
+                            <i class="icon icon-description fs-4"></i>
+                            </div>
+
+                            <!-- Inputs -->
+                            <div class="flex-grow-1">
+                            <div class="row">
+                                <!-- Row 1 -->
+                                <div class="col-12">
+                                        <textarea class="form-control form-control-solid" rows="4" placeholder="Enter a meeting description" aria-label="Meeting Description"></textarea>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+            <div class="mb-2">
+                <div class="d-flex align-items-start gap-3">
+                    <!-- Shared Icon -->
+                        <div class="pt-2 text-muted">
+                        <i class="icon icon-guests fs-3"></i>
+                        </div>
+                    <!-- Inputs -->
+                        <div class="flex-grow-1">
+                            <div class="row">
+                            <!-- Row 1 -->
+                            <div class="col-12">
+                                    <div class="form-mind-container">
+                                        <div class="form-mind-container-input">
+                                            <div class="card-flip">
+                                                <div class="card-inner">
+                                                    <div class="card-front">
+                                                        <div class="label-form">
+                                                        <span> Add guests </span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="card-back">
+                                                        <div class="form-mind">
+                                                        <input type="text" class="form-control form-control-solid w-100" placeholder="Enter guest email">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+            </div>
+
+          <div class="mb-2">
+                <div class="d-flex align-items-start gap-3">
+                    <!-- Shared Icon -->
+                        <div class="pt-2 text-muted">
+                        <i class="icon icon-topics fs-3"></i>
+                        </div>
+                    <!-- Inputs -->
+                        <div class="flex-grow-1">
+                            <div class="row">
+                            <!-- Row 1 -->
+                            <div class="col-12">
+                                    <div class="form-mind-container">
+                                        <div class="form-mind-container-input">
+                                            <div class="card-flip">
+                                                <div class="card-inner">
+                                                    <div class="card-front">
+                                                        <div class="label-form">
+                                                        <span>  Add topics  <small class="text-muted">(optional)</small></span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="card-back">
+                                                        <div class="form-mind">
+                                                        <input type="text" class="form-control form-control-solid w-100" placeholder="Enter topics">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+            </div>
+
+            <div class="mb-2">
+                <div class="d-flex align-items-start gap-3">
+                    <!-- Shared Icon -->
+                        <div class="pt-2 text-muted">
+                        <i class="icon icon-committee fs-3"></i>
+                        </div>
+                    <!-- Inputs -->
+                        <div class="flex-grow-1">
+                            <div class="row">
+                            <!-- Row 1 -->
+                            <div class="col-12">
+                                    <div class="form-mind-container">
+                                        <div class="form-mind-container-input">
+                                            <div class="card-flip">
+                                                <div class="card-inner">
+                                                    <div class="card-front">
+                                                        <div class="label-form">
+                                                        <span>  Add committee  <small class="text-muted">(optional)</small></span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="card-back">
+                                                        <div class="form-mind">
+                                                        <input type="text" class="form-control form-control-solid w-100" placeholder="Enter committee">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+            </div>
+
+            <div class="mb-2">
+                <div class="d-flex align-items-start gap-3">
+                <!-- Shared Icon -->
+                    <div class="pt-2 text-muted">
+                    <i class="icon icon-project fs-3"></i>
+                    </div>
+                <!-- Inputs -->
+                        <div class="flex-grow-1">
+                        <div class="row">
+                        <!-- Row 1 -->
+                        <div class="col-12">
+                        <div class="form-mind-container">
+                        <div class="form-mind-container-input">
+                            <div class="card-flip">
+                                <div class="card-inner">
+                                    <div class="card-front">
+                                        <div class="label-form">
+                                        <span>  Add project  <small class="text-muted">(optional)</small></span>
+                                        </div>
+                                    </div>
+                                    <div class="card-back">
+                                        <div class="form-mind">
+                                        <select class="form-select form-control-solid">
+                                                <option value=""> project 1</option>
+                                                <option value=""> project 1</option>
+                                                <option value=""> project 1</option>
+                                                <option value=""> project 1</option>
+                                                <option value=""> project 1</option>                            
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                        </div>
+                        </div>
+                        </div>
+                </div>
+            </div>
+
+           <div class="mb-2">
+                <div class="d-flex align-items-start gap-3">
+                <!-- Shared Icon -->
+                    <div class="pt-2 text-muted">
+                    <i class="icon icon-decisions fs-3"></i>
+                    </div>
+                <!-- Inputs -->
+                        <div class="flex-grow-1">
+                        <div class="row">
+                        <!-- Row 1 -->
+                        <div class="col-12">
+                        <div class="form-mind-container">
+                        <div class="form-mind-container-input">
+                            <div class="card-flip">
+                                <div class="card-inner">
+                                    <div class="card-front">
+                                        <div class="label-form">
+                                        <span> Adding previous decisions by passing  <small class="text-muted">(optional)</small></span>
+                                        </div>
+                                    </div>
+                                    <div class="card-back">
+                                        <div class="form-mind">
+                                        <select class="form-select form-control-solid">
+                                                <option value=""> decisions 1</option>
+                                                <option value=""> decisions 1</option>
+                                                <option value=""> decisions 1</option>
+                                                <option value=""> decisions 1</option>
+                                                <option value=""> decisions 1</option>                            
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                        </div>
+                        </div>
+                        </div>
+                </div>
+            </div>
+   <div class="mb-2">
+                <div class="d-flex align-items-start gap-3">
+                    <!-- Shared Icon -->
+                        <div class="pt-2 text-muted">
+                        <i class="icon icon-attachments fs-3"></i>
+                        </div>
+                    <!-- Inputs -->
+                        <div class="flex-grow-1">
+                            <div class="row">
+                            <!-- Row 1 -->
+                            <div class="col-12">
+                                    <div class="form-mind-container">
+                                        <div class="form-mind-container-input">
+                                            <div class="card-flip">
+                                                <div class="card-inner">
+                                                    <div class="card-front">
+                                                        <div class="label-form">
+                                                        <span>  Add attachments  <small class="text-muted">(optional)</small></span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="card-back">
+                                                        <div class="form-mind">
+                                                        <input type="text" class="form-control form-control-solid w-100" placeholder="Enter attachments">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+            </div>
+
+    </form>
+  </div>
+</main>
+
+
+
+
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/select2.min.js"></script>
+
+    <script>
+        $(function() {
+            $(".card-flip").on("click", function() {
+                $(this).addClass("flipped");
+            });
+        });
+    </script>
+   <script>
+        $("#Workspace").select2({
+            placeholder: "Select Workspace",
+            allowClear: true,
+            /*   minimumResultsForSearch: -1 */
+        });
+        $("#AssignTo").select2({
+            placeholder: "Select Assign To",
+            allowClear: true,
+            /*   minimumResultsForSearch: -1 */
+        });
+        $("#Priority").select2({
+            placeholder: "Select task priority",
+            allowClear: true,
+            minimumResultsForSearch: -1
+        });
+    </script>
+
+
+</body>
+
+</html>

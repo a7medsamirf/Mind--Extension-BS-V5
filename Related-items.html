@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+
+    <title>Related items </title>
+
+
+</head>
+
+<body class="page min-vh-100 d-flex flex-column">
+    <div class="header border-bottom p-3">
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-center">
+               <div class="text-muted">
+                      <img class="brand w-100 h-100" src="assets/img/MindLogo.svg" alt="Mind" >
+                </div>
+                <div class="text-muted">
+                  <a href="index.html" type="button" class="btn close fs-8" aria-label="Close">
+                    <i class="icon icon-close fs-4"></i>
+                 </a>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <div class="header border-bottom p-3">
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-center">
+               <div class="text-muted">
+                    <span class="panel-title">Related items <small class="text-muted fs-9">(4)</small></span>
+                </div>
+                <div class="text-muted">
+                   <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+        <!-- Primary Action Button -->
+            <button class="btn btn-primary py-2 px-3" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="icon icon-plus fs-10"></i> Add
+                    </button>
+
+            <!-- Dropdown Toggle Button -->
+                <button type="button" class="btn btn-primary dropdown-toggle dropdown-toggle-split">
+                    <span class="visually-hidden"></span>
+                </button>
+
+                <!-- Dropdown Menu -->
+                <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="Add-Task.html"> <i class="icon icon-plus add-task fs-10"></i> add task </a></li>
+                        <li><a class="dropdown-item" href="Add-Meeting.html"> <i class="icon icon-add-meeting"></i> add meeting</a></li>
+                    </ul>
+                </div>
+                </div>
+
+            </div>
+        </div>
+  
+    </div>
+
+<main class="flex-grow-1">
+  <div class="container">
+    <ul class="nav nav-pills relatedTabs gap-2 pt-3" id="relatedTabs" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active rounded-pill px-4" id="tab-all" data-bs-toggle="pill" data-bs-target="#pane-all" type="button" role="tab" aria-controls="pane-all" aria-selected="true">All</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link rounded-pill px-4" id="tab-meetings" data-bs-toggle="pill" data-bs-target="#pane-meetings" type="button" role="tab" aria-controls="pane-meetings" aria-selected="false">Meetings</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link rounded-pill px-4" id="tab-tasks" data-bs-toggle="pill" data-bs-target="#pane-tasks" type="button" role="tab" aria-controls="pane-tasks" aria-selected="false">Tasks</button>
+      </li>
+    </ul>
+
+    <div class="tab-content pt-3" id="relatedTabContent">
+      <!-- All -->
+      <div class="tab-pane fade show active" id="pane-all" role="tabpanel" aria-labelledby="tab-all">
+        <!-- Meeting card -->
+        <div class="card border rounded-3 mb-3 shadow-none">
+          <div class="card-body">
+            <div class="d-flex align-items-center gap-2 mb-2">
+              <span class="text-muted"> <i class="icon icon-meeting"></i> Meeting </span>
+            </div>
+            <h6 class="mb-2">Project Kickoff Meeting</h6>
+            <div class="text-muted d-flex align-items-center gap-2">
+              <i class="icon icon-time fs-6"></i>
+              <span class="fs-8">23 December 2025 ,2:00 PM - 3:00 PM</span>
+            </div>
+          </div>
+        </div>
+        <!-- Task card -->
+      <div class="card border rounded-3 mb-3 shadow-none">
+          <div class="card-body">
+            <div class="d-flex align-items-center gap-2 mb-2">
+              <span class="text-muted"> <i class="icon icon-task text-primary"></i> Task </span>
+            </div>
+            <h6 class="mb-2">Prepare meeting agenda</h6>
+            <div class="text-muted d-flex align-items-center gap-2">
+              <i class="icon icon-calendar fs-6"></i>
+              <span class="fs-8">Due Date : 23 December 2025</span>
+            </div>
+          </div>
+        </div>
+        <!-- Task card -->
+       <div class="card border rounded-3 mb-3 shadow-none">
+          <div class="card-body">
+            <div class="d-flex align-items-center gap-2 mb-2">
+              <span class="text-muted"> <i class="icon icon-task text-primary"></i> Task </span>
+            </div>
+            <h6 class="mb-2">Follow up on action items</h6>
+            <div class="text-muted d-flex align-items-center gap-2">
+              <i class="icon icon-calendar fs-6"></i>
+              <span class="fs-8">Due Date : 23 December 2025</span>
+            </div>
+          </div>
+        </div>
+        <!-- Meeting card -->
+      <div class="card border rounded-3 mb-3 shadow-none">
+          <div class="card-body">
+            <div class="d-flex align-items-center gap-2 mb-2">
+              <span class="text-muted"> <i class="icon icon-meeting"></i> Meeting </span>
+            </div>
+            <h6 class="mb-2">Weekly Team Sync</h6>
+            <div class="text-muted d-flex align-items-center gap-2">
+              <i class="icon icon-time fs-6"></i>
+              <span class="fs-8">23 December 2025 ,2:00 PM - 3:00 PM</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Meetings -->
+      <div class="tab-pane fade" id="pane-meetings" role="tabpanel" aria-labelledby="tab-meetings">
+        <div class="card border rounded-3 mb-3 shadow-none">
+          <div class="card-body">
+            <div class="d-flex align-items-center gap-2 mb-2">
+              <span class="text-muted"> <i class="icon icon-meeting"></i> Meeting </span>
+            </div>
+            <h6 class="mb-2">Project Kickoff Meeting</h6>
+            <div class="text-muted d-flex align-items-center gap-2">
+              <i class="icon icon-time fs-6"></i>
+              <span class="fs-8">23 December 2025 ,2:00 PM - 3:00 PM</span>
+            </div>
+          </div>
+        </div>
+        <div class="card border rounded-3 mb-3 shadow-none">
+          <div class="card-body">
+            <div class="d-flex align-items-center gap-2 mb-2">
+              <span class="text-muted"> <i class="icon icon-meeting"></i> Meeting </span>
+            </div>
+            <h6 class="mb-2">Weekly Team Sync</h6>
+            <div class="text-muted d-flex align-items-center gap-2">
+              <i class="icon icon-time fs-6"></i>
+              <span class="fs-8">23 December 2025 ,2:00 PM - 3:00 PM</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tasks -->
+      <div class="tab-pane fade" id="pane-tasks" role="tabpanel" aria-labelledby="tab-tasks">
+        <div class="card border rounded-3 mb-3 shadow-none">
+          <div class="card-body">
+            <div class="d-flex align-items-center gap-2 mb-2">
+              <span class="text-muted"> <i class="icon icon-task text-primary"></i> Task </span>
+            </div>
+            <h6 class="mb-2">Prepare meeting agenda</h6>
+            <div class="text-muted d-flex align-items-center gap-2">
+              <i class="icon icon-calendar fs-6"></i>
+              <span class="fs-8">Due Date : 23 December 2025</span>
+            </div>
+          </div>
+        </div>
+        <div class="card border rounded-3 mb-3 shadow-none">
+          <div class="card-body">
+            <div class="d-flex align-items-center gap-2 mb-2">
+              <span class="text-muted"> <i class="icon icon-task text-primary"></i> Task </span>
+            </div>
+            <h6 class="mb-2">Follow up on action items</h6>
+            <div class="text-muted d-flex align-items-center gap-2">
+              <i class="icon icon-calendar fs-6"></i>
+              <span class="fs-8">Due Date : 23 December 2025</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+ <!-- صوره اذا كان المحتوي فارغ -->
+  <section class="flex-grow-1 d-flex align-items-center justify-content-center" >
+    <main class="flex-grow-1" hidden>
+        <div class="container" >
+            <div class="col-lg-12 " >
+                <div class="card shadow-none rounded-1 border-0">
+                    <div class="card-body">
+                            <div class="d-flex align-items-center justify-content-center">
+                            <div class="text-center">
+                                <div class="p-10">
+                                    <img class="img-control mb-2" src="assets/img/empty-archive.svg" alt="no attachments">
+                                    <div class="mb-3">
+                                    <p class="fs-6 mb-1"> No related items yet </p>
+                                    <p class="text-muted text-muted d-block fs-8 mb-1">  Create one to start tracking work</p>
+
+                                    </div>
+                                    <div class="d-flex justify-content-center gap-2">
+                                    <a href="Add-Task.html" class="btn btn-outline">
+                                            <i class="icon icon-plus add-task"></i>
+                                            add task
+                                        </a>
+
+                                        <a href="Add-Meeting.html" class="btn btn-outline">
+                                            <i class="icon icon-add-meeting"></i>
+                                            Add Meeting 
+                                        </a>
+                                </div>
+                                </div>
+                            </div>    
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    </section>
+ <!-- صوره اذا كان المحتوي فارغ -->
+
+
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/select2.min.js"></script>
+
+</body>
+
+</html>

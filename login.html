@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+
+    <title>Login - Mind Extension</title>
+
+</head>
+
+<body class="page min-vh-100 d-flex flex-column">
+    <div class="header p-3">
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-center">
+               <div class="">
+                      <img class="brand w-100 h-100" src="assets/img/MindLogo.svg" alt="Mind" >
+                </div>
+                <div class="">
+                 <a href="index.html" type="button" class="btn close fs-8" aria-label="Close">
+                    <i class="icon icon-close fs-4"></i>
+                 </a>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+    <main class="flex-grow-1">
+        <div class="container">
+
+            <div class="panel-title fw-semibold p-3 mb-2 pt-3">
+                <h1 class="fs-4 mb-1">Welcome <span class="ms-1">👋</span></h1>
+                <p class="text-secondary mb-0">Enter your email and password to log in to your account.</p>
+            </div>
+
+            <form class="mt-4 mb-4 p-3">
+                <div class="mb-4">
+                    <label class="form-label">Email</label>
+                      <div class="form-group has-icon">
+                            <span class="icon icon-Email fs-5 form-control-feedback"></span>
+                            <input type="email" class="form-control" placeholder="Enter your email address">
+                        </div>
+                </div>
+             <div class="mb-4">
+                <label class="form-label" for="password">Password</label>
+                      <div class="form-group has-icon">
+                            <span class="icon icon-Password fs-5 form-control-feedback"></span>
+                            <input type="password" id="password" value="" class="form-control" placeholder="Enter your password" aria-label="Password">
+                             <span type="button" class="password-switch  ">
+                                <i class="toggle-password icon icon-eye fs-5"></i>
+                             </span>
+                        </div>
+                </div>
+
+
+                <a href="Related-items.html" class="btn btn-primary w-100 py-2 mb-5 rounded-3">Log in</a>
+            </form>
+            <hr class="divider my-4">
+            <div class="d-grid gap-4">
+                <div class="d-flex align-items-start gap-3">
+                    <span class="feature-icon"><i class="icon icon-log fs-4"></i></span>
+                    <span class="feature-text">Log In To Mind Directly From Outlook And Keep Your Meetings And Tasks Connected To Your Email.</span>
+                </div>
+                <div class="d-flex align-items-start gap-3">
+                    <span class="feature-icon"><i class="icon icon-calendar fs-4"></i></span>
+                    <span class="feature-text">Add New Meetings Or View All Meetings Linked To This Email In One Place.</span>
+                </div>
+                <div class="d-flex align-items-start gap-3">
+                    <span class="feature-icon"><i class="icon icon-Create-task fs-4"></i></span>
+                    <span class="feature-text">Create Tasks Or View All Tasks Related To This Email Without Leaving Outlook.</span>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/select2.min.js"></script>
+
+<script>
+document.addEventListener('click', function (e) {
+    const toggle = e.target.closest('.toggle-password');
+    if (!toggle) return;
+
+    toggle.classList.toggle('icon-eye');
+    toggle.classList.toggle('icon-show-eye');
+
+    const inputGroup = toggle.closest('.form-group');
+    if (!inputGroup) return;
+
+    const input = inputGroup.querySelector('input[type="password"], input[type="text"]');
+    if (!input) return;
+
+    input.type = input.type === 'password' ? 'text' : 'password';
+});
+</script>
+</body>
+
+</html>
